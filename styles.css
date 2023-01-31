@@ -9,7 +9,7 @@ body{
 .container{
     background-color: rgb(241, 241, 129);
     margin: 0% auto;
-    width: 80 vw;
+    width: 80vw;
     max-width: 1200px;
 }
 
