@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body{
+    
+    background-color: rgb(234, 255, 234);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.container{
+    background-color: rgb(241, 241, 129);
+    margin: 0% auto;
+    width: 80 vw;
+    max-width: 1200px;
+}
+
+
+header{
+    background-color: #303036;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px ;
+}
+
+header h1{
+    color: white;
+    
+}
+
+nav{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000000;
+    background-color: rgb(241, 241, 129);
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+header nav a:hover{
+    color: black;
+    background-color: rgb(240, 197, 117);
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    width: 80%;
+
+}
+
+article p{
+    padding-top: 10px ;
+}
+
+footer {
+    background-color:  #303036;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (min-width:600px) {
+  
+   header nav{
+    flex-direction: row;
+    gap: 18px;
+   }
+
+   main{
+    display: flex;
+    gap: 50px;
+    margin: 0 27px;
+   }
+
+
+
+}
+
+/*Form*/
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+.send-button-container{
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    padding-bottom: 7px;
+}
+
+
+.send-button-container input {
+    width: 30%;
+    min-width: 100px;
+}
+
+
+
+@media (min-width:600px) {
+    form{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .send-button-container{
+        grid-column: span 2;
+    }
+
+}
+
